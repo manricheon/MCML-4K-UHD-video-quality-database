@@ -1,6 +1,5 @@
 # MCML 4K UHD video quality database
 
----
 ## Contents
   - [Introduction](#introduction)
     - [Download](#download)
@@ -12,7 +11,6 @@
   - [License & Citation](#license--citation)
   - [Contact](#contact)
 
----
 ## Introduction
 We present a subjective quality assessment of compressed 4K ultra-high-definition (UHD) videos in an immersive viewing environment. Three state-of-the-art video coding techniques, i.e., advanced video coding (AVC), high efficiency video coding (HEVC), and VP9. We aim at investigating added values of UHD over conventional high definition (HD) in terms of perceptual quality. The database includes video sequences and subjective ratings. Details of the data can be found in our paper.
 
@@ -36,12 +34,12 @@ However, the latest quick download links may be kept available in this repositor
     - 2018-09 : AVC and HEVC bitstream sequences are added.
 
 
-### ToDo
+### To Do
 - [ ] Add preview of all content
 - [ ] Add script to extract frames from encoded video sequence
 - [ ] Add dataset class for deep learning framework (e.g., Pytorch, Tensorflow, etc.)
 
----
+
 ## Description
 ### Source videos
 Ten source videos (nine recorded sequences and one selected from the open source video) were considered in database. Source video sequences were captured using a RED EPIC-M digital cinematographic camera with the RED PRO ZOOM 18-85 mm lens. The recorded raw video sequences were saved in the equipment's own format, i.e., REDCODE (.r3d) raw data, which are virtually lossless. Recording parameters (e.g., ISO, shutter speed, focal length, etc.) were carefully adjusted depending on the scene. The original videos had the 5K resolution (5120x2700 pixels) at a frame rate of 30 fps, which were cropped to the 4K UHD resolution (3840x2160).
@@ -68,7 +66,6 @@ The videos are formatted as .yuv for all codecs. The encoded bitstream sequences
 For decoding bistreams (.264, .bin, and .webm), please refer the description and attached zip file.
 
 
----
 ## License & Citation
 Video sequences and subjective data may be used for research and development puposes only. Commercial applications are not allowed. Please cite following paper when you use this database:
 
@@ -84,7 +81,6 @@ Video sequences and subjective data may be used for research and development pup
     }
 
 
-___
 ## Contact
 - Manri Cheon
   - E-mail : manri.cheon at gmail.com
