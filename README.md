@@ -1,5 +1,31 @@
 # MCML 4K UHD video quality database
 
+
+## Introduction
+We present a subjective quality assessment of compressed 4K ultra-high-definition (UHD) videos in an immersive viewing environment. Three state-of-the-art video coding techniques, i.e., advanced video coding (AVC), high efficiency video coding (HEVC), and VP9. We aim at investigating added values of UHD over conventional high definition (HD) in terms of perceptual quality. The database includes video sequences and subjective ratings. Details of the data can be found in our paper.
+
+- [M. Cheon and J.-S. Lee, "Subjective and objective quality assessment of compressed 4K UHD videos for immersive experience", IEEE Trans. Circuits and Systems for Video Technology, vol. 28, no. 7, pp. 1467-1480, Jul. 2018.](https://ieeexplore.ieee.org/abstract/document/7879860)
+
+Noe that this repository is a clone of the [MCML 4K UHD video quality database](http://mcml.yonsei.ac.kr/downloads/4kuhdvideoquality) page.
+However, the latest quick download links may be kept available in this repository.
+
+### Download
+- [Download from OneDrive](https://1drv.ms/u/s!AruYFpEm1xLPgbZpEMppacKyanfecg?e=mcapSL) (faster way)
+- [Download from server](http://mcml.yonsei.ac.kr/downloads/4kuhdvideoquality)
+
+### Updates
+    - 2022-11 : Faster download link is added.
+    - 2020-06 : Raw scores are added.
+    - 2018-11 : Description for decoding bitstreams is added.
+    - 2018-10 : VP9 bitstream sequences are added.
+    - 2018-09 : AVC and HEVC bitstream sequences are added.
+
+### To Do
+- [ ] Add preview of all content
+- [ ] Add script to extract frames from encoded video sequence
+- [ ] Add dataset class for deep learning framework (e.g., Pytorch, Tensorflow, etc.)
+
+
 ## Contents
   - [Introduction](#introduction)
     - [Download](#download)
@@ -10,34 +36,6 @@
     - [Format](#format)
   - [License & Citation](#license--citation)
   - [Contact](#contact)
-
-## Introduction
-We present a subjective quality assessment of compressed 4K ultra-high-definition (UHD) videos in an immersive viewing environment. Three state-of-the-art video coding techniques, i.e., advanced video coding (AVC), high efficiency video coding (HEVC), and VP9. We aim at investigating added values of UHD over conventional high definition (HD) in terms of perceptual quality. The database includes video sequences and subjective ratings. Details of the data can be found in our paper.
-
-- [M. Cheon and J.-S. Lee, "Subjective and objective quality assessment of compressed 4K UHD videos for immersive experience", IEEE Trans. Circuits and Systems for Video Technology, vol. 28, no. 7, pp. 1467-1480, Jul. 2018.](https://ieeexplore.ieee.org/abstract/document/7879860)
-
-
-Noe that this repository is a clone of the [MCML 4K UHD video quality database](http://mcml.yonsei.ac.kr/downloads/4kuhdvideoquality) page.
-However, the latest quick download links may be kept available in this repository.
-
-
-### Download
-- [Download from OneDrive](https://1drv.ms/u/s!AruYFpEm1xLPgbZpEMppacKyanfecg?e=mcapSL) (faster way)
-- [Download from server](http://mcml.yonsei.ac.kr/downloads/4kuhdvideoquality)
-
-
-### Updates
-    - 2022-11 : Faster download link is added.
-    - 2020-06 : Raw scores are added.
-    - 2018-11 : Description for decoding bitstreams is added.
-    - 2018-10 : VP9 bitstream sequences are added.
-    - 2018-09 : AVC and HEVC bitstream sequences are added.
-
-
-### To Do
-- [ ] Add preview of all content
-- [ ] Add script to extract frames from encoded video sequence
-- [ ] Add dataset class for deep learning framework (e.g., Pytorch, Tensorflow, etc.)
 
 
 ## Description
