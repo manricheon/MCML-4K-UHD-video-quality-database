@@ -16,8 +16,8 @@ Check your storage before downloading full database. Each .yuv file is about 5.6
 - [Download from OneDrive](https://1drv.ms/u/s!AruYFpEm1xLPgbZpEMppacKyanfecg?e=mcapSL) (faster way)
 - [Download from server](http://mcml.yonsei.ac.kr/downloads/4kuhdvideoquality)
 - Donwload from server using bash script
-  - Run ```bash download.sh``` in order to obtain all .yuv sequences. (10 reference videos + 240 distorted videos)
-  - Each script can be found in script folder.
+  - Run ```bash download.sh``` in order to obtain all .yuv sequences. (10 reference + 240 distorted videos)
+  - Script to download depending on codec type can be found in script folder.
   - Script ```reference.sh``` downloads 10 reference .yuv files and subjective ratings.
   - Scripts, ```avc.sh, hevc.sh, and vp9.sh```, include the following steps:
     1. Download and unzip 10 zip files. Each zip file includes 8 encoded sequences.
