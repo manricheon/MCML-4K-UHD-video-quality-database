@@ -10,10 +10,25 @@ Noe that this repository is a clone of the [MCML 4K UHD video quality database](
 However, the latest quick download links may be kept available in this repository.
 
 ### Download
+
+Check your storage before downloading full database. Each .yuv file is about 5.6 GB in size...
+
 - [Download from OneDrive](https://1drv.ms/u/s!AruYFpEm1xLPgbZpEMppacKyanfecg?e=mcapSL) (faster way)
 - [Download from server](http://mcml.yonsei.ac.kr/downloads/4kuhdvideoquality)
+- Donwload from server using bash script
+  - Run ```bash download.sh``` in order to obtain all .yuv sequences. (10 reference videos + 240 distorted videos)
+  - Each script can be found in script folder.
+  - Script ```reference.sh``` downloads 10 reference .yuv files and subjective ratings.
+  - Scripts, ```avc.sh, hevc.sh, and vp9.sh```, include the following steps:
+    1. Download and unzip 10 zip files. Each zip file includes 8 encoded sequences.
+    2. Decode the encoded sequences and save them in .yuv format.
+    3. If needed, upscale the decoded FHD video to UHD resolution before saving.
+
+
+
 
 ### Updates
+    - 2022-11 : Download scripts are added.
     - 2022-11 : Faster download link is added.
     - 2020-06 : Raw scores are added.
     - 2018-11 : Description for decoding bitstreams is added.
@@ -22,6 +37,7 @@ However, the latest quick download links may be kept available in this repositor
 
 ### To Do
 - [ ] Add preview of all content
+- [x] Add script to download video sequences from server
 - [ ] Add script to extract frames from encoded video sequence
 - [ ] Add dataset class for deep learning framework (e.g., Pytorch, Tensorflow, etc.)
 
