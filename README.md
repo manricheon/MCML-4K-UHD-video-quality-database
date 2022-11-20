@@ -17,9 +17,9 @@ Check your storage before downloading full database. Each .yuv file is about 5.6
 - [Download from server](http://mcml.yonsei.ac.kr/downloads/4kuhdvideoquality)
 - Donwload from server using bash script
   - Run ```bash download.sh``` in order to obtain all .yuv sequences. (10 reference + 240 distorted videos)
-  - Script to download depending on codec type can be found in script folder.
-  - Script ```reference.sh``` downloads 10 reference .yuv files and subjective ratings.
-  - Scripts, ```avc.sh, hevc.sh, and vp9.sh```, include the following steps:
+  - Script to download depending on the codec types can be found in script folder.
+  - Script [reference.sh](/script/reference.sh) downloads 10 reference .yuv files and subjective ratings.
+  - Scripts, [avc.sh](script/avc.sh), [hevc.sh](script/hevc.sh), and [vp9.sh](script/vp9.sh), include the following steps:
     1. Download and unzip 10 zip files. Each zip file includes 8 encoded sequences.
     2. Decode the encoded sequences and save them in .yuv format.
     3. If needed, upscale the decoded FHD video to UHD resolution before saving.
