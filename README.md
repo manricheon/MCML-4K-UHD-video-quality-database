@@ -6,8 +6,8 @@ We present a subjective quality assessment of compressed 4K ultra-high-definitio
 
 - [M. Cheon and J.-S. Lee, "Subjective and objective quality assessment of compressed 4K UHD videos for immersive experience", IEEE Trans. Circuits and Systems for Video Technology, vol. 28, no. 7, pp. 1467-1480, Jul. 2018.](https://ieeexplore.ieee.org/abstract/document/7879860)
 
-Noe that this repository is a clone of the [MCML 4K UHD video quality database](http://mcml.yonsei.ac.kr/downloads/4kuhdvideoquality) page.
-However, the latest quick download links may be kept available in this repository.
+<!-- Noe that this repository is a clone of the [MCML 4K UHD video quality database](http://mcml.yonsei.ac.kr/downloads/4kuhdvideoquality) page.
+However, the latest quick download links may be kept available in this repository. -->
 
 ### Download
 
@@ -19,10 +19,14 @@ Check your storage before downloading full database. Each .yuv file is about 5.6
   - Run ```bash download.sh``` in order to obtain all .yuv sequences. (10 reference + 240 distorted videos)
   - Script to download depending on the codec types can be found in script folder.
   - Script [reference.sh](/script/reference.sh) downloads 10 reference .yuv files and subjective ratings.
-  - Scripts, [avc.sh](script/avc.sh), [hevc.sh](script/hevc.sh), and [vp9.sh](script/vp9.sh), include the following steps:
+  - Script [avc.sh](script/avc.sh) includes the following step:
+    1. Download and unzip 10 zip files. Each zip file includes 8 decoded .yuv files.
+  - Scripts, [hevc.sh](script/hevc.sh) and [vp9.sh](script/vp9.sh), include the following steps:
     1. Download and unzip 10 zip files. Each zip file includes 8 encoded sequences.
     2. Decode the encoded sequences and save them in .yuv format.
     3. If needed, upscale the decoded FHD video to UHD resolution before saving.
+
+- Note that there exists some problem decoding .264 bitstreams using ffmpeg. If you want to decode them, please refer to this [description](http://mcml.yonsei.ac.kr/files/dataset/4kuhdvideo/readme_decode.txt) and attached [zip file](http://mcml.yonsei.ac.kr/files/dataset/4kuhdvideo/decode.zip).
 
 
 
@@ -43,14 +47,18 @@ Check your storage before downloading full database. Each .yuv file is about 5.6
 
 
 ## Contents
+- [MCML 4K UHD video quality database](#mcml-4k-uhd-video-quality-database)
   - [Introduction](#introduction)
     - [Download](#download)
+    - [Updates](#updates)
+    - [To Do](#to-do)
+  - [Contents](#contents)
   - [Description](#description)
     - [Source videos](#source-videos)
     - [Distorted videos](#distorted-videos)
     - [Subjective ratings](#subjective-ratings)
     - [Format](#format)
-  - [License & Citation](#license--citation)
+  - [License \& Citation](#license--citation)
   - [Contact](#contact)
 
 

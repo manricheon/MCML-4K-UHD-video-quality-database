@@ -33,19 +33,19 @@ do
 
             if [ ${seq_num} = 010 ]
             then
-                file_path=${dir_codec}/"S"${seq_num:1}/"S"${seq_num}_H_${res_type}_${dst_type}
+                file_path=${dir_codec}/"S"${seq_num:1}/"S"${seq_num}_V_${res_type}_${dst_type}
             else
-                file_path=${dir_codec}/"S"${seq_num}/"S"${seq_num}_H_${res_type}_${dst_type}
+                file_path=${dir_codec}/"S"${seq_num}/"S"${seq_num}_V_${res_type}_${dst_type}
             fi
             echo ${file_path}
 
             if [ ${res_type} == 01 ]
             then
-                ffmpeg -i ${file_path}.bin ${file_path}_temp.yuv
+                ffmpeg -i ${file_path}.webm ${file_path}_temp.yuv
                 ffmpeg -s hd1080 -r 30 -i ${file_path}_temp.yuv -vcodec rawvideo -sws_flags lanczos -s 3840x2160 -r 30 ${file_path}.yuv
                 rm ${file_path}_temp.yuv
             else
-                ffmpeg -i ${file_path}.bin ${file_path}.yuv
+                ffmpeg -i ${file_path}.webm ${file_path}.yuv
 
             fi
         done
